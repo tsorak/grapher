@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Grapher</title>
+		<script src="script.js" defer></script>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Grapher</title>
-        <script src="script.js" defer></script>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-
-    <body>
-
-    </body>
-
+	<body>
+		<main>
+			<div class="toolbar">
+				<label for="cvsX">Size X</label>
+				<input class="cvsSize" type="number" name="cvsX" value="800" />
+				<label for="cvsY">Size Y</label>
+				<input class="cvsSize" type="number" name="cvsY" value="600" />
+			</div>
+			<canvas width="0" height="0"></canvas>
+		</main>
+	</body>
 </html>
