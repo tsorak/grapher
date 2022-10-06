@@ -12,10 +12,12 @@
 	<body>
 		<main>
 			<div class="toolbar">
-				<label for="cvsX">Size X</label>
-				<input class="cvsSize" type="number" name="cvsX" value="800" />
-				<label for="cvsY">Size Y</label>
-				<input class="cvsSize" type="number" name="cvsY" value="600" />
+				<label for="cvsX" class="noInteract">Size X</label>
+				<input class="cvsSize" type="number" id="cvsX" value="800" />
+				<label for="cvsY" class="noInteract">Size Y</label>
+				<input class="cvsSize" type="number" id="cvsY" value="600" />
+
+				<label class="noInteract" for="noiseModeElem"><input type="checkbox" id="noiseModeElem" />Noise mode</label>
 			</div>
 			<canvas width="0" height="0"></canvas>
 		</main>

@@ -18,7 +18,7 @@ main {
 }
 
 canvas {
-	border: 1px black solid;
+	/* border: 1px black solid; */
 	width: fit-content;
 	height: fit-content;
 }
@@ -27,4 +27,8 @@ canvas {
 	display: flex;
 	flex-direction: column;
 	width: 200px;
+}
+
+.noInteract {
+	user-select: none;
 }
