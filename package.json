@@ -1,0 +1,14 @@
+{
+  "name": "grapher",
+  "author": "tsorak",
+  "version": "1.0.0",
+  "description": "The purpose of the program is to allow users to create and save a line graph as a .png file.",
+  "main": "nodeServer.js",
+  "scripts": {
+    "start": "node nodeServer.js"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "path": "^0.12.7"
+  }
+}
