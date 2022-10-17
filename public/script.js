@@ -14,13 +14,13 @@ const config = {
         size: { x: sizeXElem.value, y: sizeYElem.value },
     },
     period: {
-        unit: "months",
+        unit: "days",
         step: 0,
         amountOfPoints: 0,
     },
     value: {
         unit: "kr",
-        step: { distance: 20, amountPerStep: 100 },
+        step: { distance: 50, amountPerStep: 100 },
         amountOfPoints: 0,
     },
     points: [0],
@@ -31,7 +31,8 @@ const setupConfig = () => {
     config.period.step = config.element.size.x / config.period.amountOfPoints;
 
     //points along y axis
-    config.value.amountOfPoints = Math.floor(config.element.size.y / config.value.step.distance);
+    config.value.amountOfPoints = 10;
+    config.value.step.distance = Math.floor(config.element.size.y / config.value.amountOfPoints);
 
     //Leap year
     if (config.time.isLeapYear) {
@@ -64,7 +65,6 @@ const drawAxles = () => {
     drawLine(0, 0, 0, config.element.size.y, "#000");
     drawLine(0, config.element.size.y, config.element.size.x, config.element.size.y, "#000");
 };
-
 const drawAxleSteps = () => {
     //X
     for (let i = 0; i < config.points.length; i++) {
@@ -72,8 +72,14 @@ const drawAxleSteps = () => {
     }
     //Y
     for (let i = 0; i < config.value.amountOfPoints; i++) {
-        drawLine(0, config.element.size.y - i * config.value.step.distance, 14, config.element.size.y - i * config.value.step.distance, "#000");
+        drawLine(0, i * config.value.step.distance, 14, i * config.value.step.distance, "#000");
     }
+};
+const drawAxleText = () => {
+    canvas2d.font = "12px serif";
+    canvas2d.fillStyle = "#777";
+    canvas2d.fillText(`(${config.value.step.amountPerStep})${config.value.unit}`, 16, 12);
+    canvas2d.fillText(`${config.period.unit}`, config.element.size.x - 24, config.element.size.y - 20);
 };
 
 const drawPoints = () => {
@@ -139,6 +145,7 @@ const redraw = () => {
     canvas2d.reset();
     drawAxles();
     drawAxleSteps();
+    drawAxleText();
     drawPoints();
 };
 

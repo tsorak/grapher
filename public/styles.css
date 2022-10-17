@@ -36,3 +36,14 @@ canvas {
 .noInteract {
     user-select: none;
 }
+
+.cvsSize {
+    position: relative;
+    width: 92.5%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}

@@ -12,11 +12,13 @@
     <body>
         <main>
             <div class="toolbar">
+                <h3 style="margin: 0">Expense Calculator</h3>
                 <form onsubmit="() => {return false}">
-                    <label for="cvsX" class="noInteract">Size X</label>
-                    <input class="cvsSize" type="number" id="cvsX" value="800" />
-                    <label for="cvsY" class="noInteract">Size Y</label>
-                    <input class="cvsSize" type="number" id="cvsY" value="600" />
+                    <label for="cvsX" class="noInteract">Size X, Y</label>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr)">
+                        <input class="cvsSize" type="number" id="cvsX" value="800" />
+                        <input class="cvsSize" type="number" id="cvsY" value="600" />
+                    </div>
 
                     <select name="monthSelectElem" id="monthSelectElem">
                         <option value="0">January</option>
