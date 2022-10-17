@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Grapher</title>
-		<script src="script.js" defer></script>
-		<link rel="stylesheet" href="styles.css" />
-	</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grapher</title>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
 
-	<body>
-		<main>
-			<div class="toolbar">
-				<label for="cvsX" class="noInteract">Size X</label>
-				<input class="cvsSize" type="number" id="cvsX" value="800" />
-				<label for="cvsY" class="noInteract">Size Y</label>
-				<input class="cvsSize" type="number" id="cvsY" value="600" />
+    <body>
+        <main>
+            <div class="toolbar">
+                <form onsubmit="() => {return false}">
+                    <label for="cvsX" class="noInteract">Size X</label>
+                    <input class="cvsSize" type="number" id="cvsX" value="800" />
+                    <label for="cvsY" class="noInteract">Size Y</label>
+                    <input class="cvsSize" type="number" id="cvsY" value="600" />
 
-				<label class="noInteract" for="noiseModeElem"><input type="checkbox" id="noiseModeElem" />Noise mode</label>
-			</div>
-			<canvas width="0" height="0"></canvas>
-		</main>
-	</body>
+                    <select name="monthSelectElem" id="monthSelectElem">
+                        <option value="0">January</option>
+                        <option value="1">February</option>
+                        <option value="2">March</option>
+                        <option value="3">April</option>
+                        <option value="4">May</option>
+                        <option value="5">June</option>
+                        <option value="6">July</option>
+                        <option value="7">August</option>
+                        <option value="8">September</option>
+                        <option value="9">October</option>
+                        <option value="10">November</option>
+                        <option value="11">December</option>
+                    </select>
+                </form>
+
+                <label class="noInteract" for="noiseModeElem"><input type="checkbox" id="noiseModeElem" />Noise mode</label>
+            </div>
+            <canvas width="0" height="0"></canvas>
+        </main>
+    </body>
 </html>

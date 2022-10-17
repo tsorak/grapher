@@ -1,34 +1,38 @@
 body {
-	font-family: sans-serif;
-	margin: 0;
-	padding: 0;
-	position: relative;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
 
-	display: flex;
-	flex: none;
-	height: 100vh;
-	width: 100vw;
-	justify-content: center;
-	align-items: center;
-	position: relative;
+    display: flex;
+    flex: none;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 main {
-	display: flex;
+    display: flex;
+    gap: 16px;
 }
 
 canvas {
-	/* border: 1px black solid; */
-	width: fit-content;
-	height: fit-content;
+    /* border: 1px black solid; */
+    width: fit-content;
+    height: fit-content;
 }
 
 .toolbar {
-	display: flex;
-	flex-direction: column;
-	width: 200px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: #ededed;
+    padding: 8px;
+    gap: 8px;
 }
 
 .noInteract {
-	user-select: none;
+    user-select: none;
 }
