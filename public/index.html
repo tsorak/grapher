@@ -10,34 +10,34 @@
     </head>
 
     <body>
+        <div class="toolbar">
+            <h3 style="margin: 0">Expense Calculator</h3>
+            <form onsubmit="() => {return false}">
+                <label for="cvsX" class="noInteract">Size X, Y</label>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr)">
+                    <input class="cvsSize" type="number" id="cvsX" value="800" />
+                    <input class="cvsSize" type="number" id="cvsY" value="600" />
+                </div>
+
+                <select name="monthSelectElem" id="monthSelectElem">
+                    <option value="0">January</option>
+                    <option value="1">February</option>
+                    <option value="2">March</option>
+                    <option value="3">April</option>
+                    <option value="4">May</option>
+                    <option value="5">June</option>
+                    <option value="6">July</option>
+                    <option value="7">August</option>
+                    <option value="8">September</option>
+                    <option value="9">October</option>
+                    <option value="10">November</option>
+                    <option value="11">December</option>
+                </select>
+            </form>
+
+            <label class="noInteract" for="noiseModeElem"><input type="checkbox" id="noiseModeElem" />Noise mode</label>
+        </div>
         <main>
-            <div class="toolbar">
-                <h3 style="margin: 0">Expense Calculator</h3>
-                <form onsubmit="() => {return false}">
-                    <label for="cvsX" class="noInteract">Size X, Y</label>
-                    <div style="display: grid; grid-template-columns: repeat(2, 1fr)">
-                        <input class="cvsSize" type="number" id="cvsX" value="800" />
-                        <input class="cvsSize" type="number" id="cvsY" value="600" />
-                    </div>
-
-                    <select name="monthSelectElem" id="monthSelectElem">
-                        <option value="0">January</option>
-                        <option value="1">February</option>
-                        <option value="2">March</option>
-                        <option value="3">April</option>
-                        <option value="4">May</option>
-                        <option value="5">June</option>
-                        <option value="6">July</option>
-                        <option value="7">August</option>
-                        <option value="8">September</option>
-                        <option value="9">October</option>
-                        <option value="10">November</option>
-                        <option value="11">December</option>
-                    </select>
-                </form>
-
-                <label class="noInteract" for="noiseModeElem"><input type="checkbox" id="noiseModeElem" />Noise mode</label>
-            </div>
             <canvas width="0" height="0"></canvas>
         </main>
     </body>
