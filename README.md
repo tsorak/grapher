@@ -2,7 +2,7 @@
 
 ## What is it used for?
 
-The purpose of the program is to allow users to create and save a line graph as a .png file. The provided example can be used to interactivly draw a graph of expenditures over each day in a month.
+The purpose of the program is to allow users to create and save a line graph as a .png file. The provided example can be used to interactively draw a graph of expenditures over each day in a month.
 
 ## What does the code do?
 
