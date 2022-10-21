@@ -25,6 +25,12 @@ The [pointermove](https://developer.mozilla.org/en-US/docs/Web/API/Element/point
 
 -   Perhaps instead of using the Canvas API something else could be built to generate and save the graph to disk. (Maybe using only the commandline entirely? Providing a config and an array of numbers...)
 
+-   Add UI interactivity for controlling the amount of steps along both axles.
+
+-   Add indicator showing the average value of all points.
+
+-   Implement canvas resizing.
+
 ## Running the project
 
 ### **Node**
