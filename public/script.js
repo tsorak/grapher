@@ -1,5 +1,5 @@
 //setup grapher
-import * as grapher from "./modules/grapherModule.js";
+import * as grapher from "./modules/grapher.js";
 
 //assign references to html elements
 const canvas = document.querySelector("canvas");
